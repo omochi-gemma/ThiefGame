@@ -5,7 +5,7 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "add git_uploader"
+changes_log = "edit appdatelog"
 
 
 #フォルダパス
@@ -36,4 +36,6 @@ except Exception as e:
 #ローカルgitプロジェクトに移動
 os.chdir(GIT_PROJECT)
 #githubにアップロード
-subprocess.run(["powershell", "-Command", f"'git add .'; git commit -m \"{changes_log}\"; git push"]) 
+subprocess.run(["git", "add", "."])
+subprocess.run(["git", "commit", "-m", changes_log])
+subprocess.run(["git", "push"])
