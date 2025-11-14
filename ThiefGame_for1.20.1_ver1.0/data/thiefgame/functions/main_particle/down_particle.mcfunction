@@ -1,0 +1,2 @@
+particle composter ~ ~1 ~ 0.01 0.01 0.01 0.001 1 force @a[team=thief]
+execute unless entity @a[team=thief,tag=down,distance=..1] if entity @a[distance=..50] positioned ^ ^ ^2 run function thiefgame:main_particle/down_particle

@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "team": "thief"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "lord"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:profession/passive/avenger_revenge"
+  }
+}

@@ -1,0 +1,13 @@
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=0}] run tellraw @a "<システム> 緊急脱出装置を起動します..."
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=40}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り10秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=60}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り9秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=80}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り8秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=100}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り7秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=120}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り6秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=140}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り5秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=160}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り4秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=180}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り3秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=200}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り2秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=220}] run tellraw @a "<システム> 緊急脱出装置稼働まで 残り1秒"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=240}] run tellraw @a "<システム> 緊急脱出装置 起動完了"
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=240}] run playsound entity.player.levelup master @a -3 43 256 1 2 0

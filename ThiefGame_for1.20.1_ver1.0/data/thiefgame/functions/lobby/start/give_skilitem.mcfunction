@@ -1,0 +1,13 @@
+give @a[team=thief,tag=ninja] red_dye{display:{Name:'{"text":"茄子流忍法～透明化の術～","color":"dark_purple"}',Lore:['{"text":"持っている間透明になる。","color":"light_purple"}','{"text":" "}','[{"text":"使用可能時間:","color":"aqua"},{"text":"60秒","color":"red"}]']},CustomModelData:1} 1
+give @a[team=thief,tag=ninja] snowball{display:{Name:'{"text":"煙玉","color":"dark_gray"}',Lore:['{"text":"着弾地点に煙幕を発生させる。","color":"light_purple"}','{"text":"全て使い切ると一定時間後に復活する。","color":"light_purple"}','{"text":" "}','[{"text":"復活までの時間:","color":"aqua"},{"text":"90秒","color":"red"}]']},CustomModelData:1} 3
+
+give @a[team=thief,tag=engineer] carrot_on_a_stick{display:{Name:'{"text":"レンチ","color":"yellow"}',Lore:['{"text":"その場に地雷を設置する。","color":"light_purple"}','{"text":"館の主には見えず、触れるとスタンさせる。","color":"light_purple"}','{"text":"同時に設置できるのは2つまで。","color":"light_purple"}','{"text":" "}','[{"text":"クールタイム:","color":"aqua"},{"text":"60秒","color":"red"}]']},CustomModelData:1} 1
+give @a[team=thief,tag=engineer] carrot_on_a_stick{display:{Name:'{"text":"マジカルレンチ","color":"dark_purple"}',Lore:['{"text":"スニーク右クリックでその場にワープポイントを設置する。","color":"light_purple"}','{"text":"右クリックするとワープポイントへワープする。","color":"light_purple"}','{"text":"同時に設置できるのは1つまで。","color":"light_purple"}','{"text":" "}','[{"text":"クールタイム:","color":"aqua"},{"text":"180秒","color":"red"}]']},CustomModelData:2} 1
+
+give @a[team=thief,tag=psychic] carrot_on_a_stick{display:{Name:'{"text":"超能力者の目","color":"dark_red"}',Lore:['{"text":"視点先の館の主に発光を付与し、スタンさせる。","color":"light_purple"}','{"text":" "}','[{"text":"クールタイム:","color":"aqua"},{"text":"60秒","color":"red"}]']},CustomModelData:3} 1
+give @a[team=thief,tag=psychic] carrot_on_a_stick{display:{Name:'{"text":"千里眼","color":"yellow"}',Lore:['{"text":"館の主に発光を付与する。","color":"light_purple"}','{"text":"館の主が近くにいた場合、自分にも発光が付与されてしまう。","color":"light_purple"}','{"text":" ","color":"red"}','[{"text":"クールタイム:","color":"aqua"},{"text":"120秒","color":"red"}]']},CustomModelData:4} 1
+
+give @a[team=thief,tag=nurse] carrot_on_a_stick{display:{Name:'{"text":"医療キット","color":"red"}',Lore:['{"text":"周囲の味方の体力を回復する。","color":"light_purple"}','{"text":" ","color":"red"}','[{"text":"クールタイム:","color":"aqua"},{"text":"60秒","color":"red"}]']},CustomModelData:5} 1
+give @a[team=thief,tag=nurse] carrot_on_a_stick{display:{Name:'{"text":"「119」","color":"dark_red","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"ダウン中の味方の元へ駆けつける。","color":"light_purple"}','{"text":" 「私が生きている限り、死人は出ない！」","color":"light_purple","bold":true}','{"text":" ","color":"red"}','[{"text":"クールタイム:","color":"aqua"},{"text":"420秒","color":"red"}]']},CustomModelData:6} 1
+
+

@@ -1,0 +1,6 @@
+item replace block 9 43 200 container.13 with red_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"赤色のコンクリートパウダー","color":"dark_red"}'},Enchantments:[{}]} 3
+item replace block -4 38 231 container.13 with blue_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"青色のコンクリートパウダー","color":"blue"}'},Enchantments:[{}]} 3
+item replace block -28 39 216 container.13 with yellow_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"黄色のコンクリートパウダー","color":"yellow"}'},Enchantments:[{}]} 3
+item replace block -15 43 215 container.13 with green_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"緑色のコンクリートパウダー","color":"green"}'},Enchantments:[{}]} 3
+item replace block 22 44 206 container.13 with purple_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"紫色のコンクリートパウダー","color":"dark_purple"}'},Enchantments:[{}]} 3
+item replace block 15 38 212 container.13 with orange_concrete_powder{CanPlaceOn:["minecraft:smooth_stone"],display:{Name:'{"text":"橙色のコンクリートパウダー","color":"red"}'},Enchantments:[{}]} 3

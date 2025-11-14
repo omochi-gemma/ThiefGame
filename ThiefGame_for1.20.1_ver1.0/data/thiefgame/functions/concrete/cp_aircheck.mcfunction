@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,tag=CP] at @s if block ~ ~ ~ air run scoreboard players set @e[type=armor_stand,tag=rng] cp_noair 0
+execute as @e[type=armor_stand,tag=CP] at @s unless block ~ ~ ~ air run scoreboard players add @e[type=armor_stand,tag=rng] cp_noair 1

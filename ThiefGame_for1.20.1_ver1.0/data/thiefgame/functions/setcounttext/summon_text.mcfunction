@@ -1,0 +1,3 @@
+summon text_display -7.5 45 139.9999 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"0","color":"white"}',background:-16777216,Tags:["ct1"]}
+summon text_display -6.5 45 139.9999 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"0","color":"white"}',background:-16777216,Tags:["ct2"]}
+summon text_display -5.5 45 139.9999 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"0","color":"white"}',background:-16777216,Tags:["ct3"]}

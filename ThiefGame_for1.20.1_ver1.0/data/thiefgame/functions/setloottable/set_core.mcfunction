@@ -1,0 +1,1 @@
+item replace block -10 31 184 container.22 with redstone_block{display:{Name:'{"text":"緊急脱出装置起動コア","color":"dark_red","bold":true}',Lore:['{"text":"緊急脱出装置の起動に必要なもの。","color":"light_purple"}']},Enchantments:[{}],CanPlaceOn:["minecraft:iron_block"]} 1

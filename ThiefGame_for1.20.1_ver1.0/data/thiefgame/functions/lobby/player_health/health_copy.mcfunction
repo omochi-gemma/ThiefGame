@@ -1,0 +1,1 @@
+execute as @a store result score @s Health run data get entity @s Health
