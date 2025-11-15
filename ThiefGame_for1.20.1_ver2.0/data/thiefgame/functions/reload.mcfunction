@@ -82,6 +82,10 @@ scoreboard objectives add revivetp_charge dummy
 
 #復讐者
 scoreboard objectives add revenge dummy
+scoreboard objectives add use_carrot7 used:carrot_on_a_stick
+scoreboard objectives add use_carrot7_count dummy
+scoreboard objectives add adrenaline dummy
+scoreboard objectives add adrenaline_time dummy
 
 #館の主
 scoreboard objectives add attack_cooldown dummy

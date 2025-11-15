@@ -5,7 +5,7 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "edit appdatelog"
+changes_log = "アドレナリンのシステムを実装"
 
 
 #フォルダパス
