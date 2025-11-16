@@ -64,6 +64,7 @@ scoreboard players set @a clairvoyance_time 60
 scoreboard players set @a heal_time 40
 scoreboard players set @a revivetp_charge 60
 scoreboard players set @a adrenaline_time 20
+scoreboard players set @a wrathful_heart_time 60
 #謎解きモードクリアタグ削除
 tag @a remove clear_mystery
 #残機を2に設定

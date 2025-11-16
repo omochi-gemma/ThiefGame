@@ -86,6 +86,9 @@ scoreboard objectives add use_carrot7 used:carrot_on_a_stick
 scoreboard objectives add use_carrot7_count dummy
 scoreboard objectives add adrenaline dummy
 scoreboard objectives add adrenaline_time dummy
+scoreboard objectives add use_carrot8 used:carrot_on_a_stick
+scoreboard objectives add use_carrot8_count dummy
+scoreboard objectives add wrathful_heart_time dummy
 
 #館の主
 scoreboard objectives add attack_cooldown dummy
