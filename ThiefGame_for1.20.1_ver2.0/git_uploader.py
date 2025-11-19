@@ -5,7 +5,9 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "アプデ内容を追加"
+changes_log = "gitアップロードスクリプトにコマンドをメモ"
+#実行コマンド
+#python git_uploader.py
 
 
 #フォルダパス
