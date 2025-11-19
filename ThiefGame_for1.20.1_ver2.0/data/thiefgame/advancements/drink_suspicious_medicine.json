@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "suspicious_medicine": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{CustomModelData:1}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:lobby/drink_suspicious_medicine"
+  }
+}

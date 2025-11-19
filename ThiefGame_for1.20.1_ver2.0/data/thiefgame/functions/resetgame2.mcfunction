@@ -55,7 +55,7 @@ kill @e[type=armor_stand,tag=landmine]
 kill @e[type=armor_stand,tag=landmine_warp]
 kill @e[type=armor_stand,tag=super_eye]
 #各スキルのクールタイムをリセット
-scoreboard players set @a invisible_time 120
+scoreboard players set @a invisible_time 40
 scoreboard players set @a smoke_count 30
 scoreboard players set @a landmine_time 20
 scoreboard players set @a landmine_warp_time 40

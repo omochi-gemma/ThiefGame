@@ -47,6 +47,10 @@ scoreboard objectives add start_count dummy
 #エンドカウント
 scoreboard objectives add end_count dummy
 
+#血痕
+scoreboard objectives add bloodstain_count dummy
+scoreboard objectives add bloodstain_lifespan dummy
+
 #職業
 #忍者
 scoreboard objectives add invisible_count dummy

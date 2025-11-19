@@ -15,7 +15,7 @@ execute if entity @s[tag=place_landmine] run scoreboard players add @e[type=armo
 execute if entity @s[tag=place_landmine] run kill @e[type=armor_stand,tag=landmine,scores={landmine_placecount=2..}]
 execute if entity @s[tag=place_landmine] run playsound block.smithing_table.use master @a ~ ~ ~ 1 0 0
 execute if entity @s[tag=place_landmine] run particle crit ~ ~ ~ 0.2 0.2 0.2 1 50 force @a
-execute if entity @s[tag=place_landmine] run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["landmine"]}
+execute if entity @s[tag=place_landmine] run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["landmine"]}
 execute if entity @s[tag=place_landmine] run scoreboard players add @s use_carrot1 1
 execute if entity @s[tag=place_landmine] run tag @s remove place_landmine
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1}}},scores={use_carrot1=1,landmine_time=0}] run scoreboard players set @s use_carrot1 0
@@ -49,7 +49,7 @@ execute as @e[type=armor_stand,tag=landmine] at @s if entity @a[team=lord,distan
 execute at @e[type=armor_stand,tag=landmine_warp] run particle dragon_breath ~ ~ ~ 0.1 0.0001 0.1 0.015 5 force @a[team=!lord]
 
 execute if predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run kill @e[type=armor_stand,tag=landmine_warp]
-execute if predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["landmine_warp"]}
+execute if predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["landmine_warp"]}
 execute if predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run particle witch ~ ~ ~ 0.2 0.2 0.2 1 50 force @a
 execute if predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run playsound block.smithing_table.use master @a ~ ~ ~ 1 0 0
 execute unless predicate is_sneaking run execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run tp @s @e[type=armor_stand,tag=landmine_warp,limit=1,sort=nearest]
