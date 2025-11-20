@@ -18,6 +18,9 @@ execute if predicate looking_down unless entity @e[type=interaction,tag=look_dow
 tp @e[type=interaction,tag=look_down] ~ ~1 ~
 execute unless predicate looking_down if entity @e[type=interaction,tag=look_down,distance=..2] run kill @e[type=interaction,tag=look_down,distance=..2]
 
+#攻撃無効化interactionを常に移動
+execute at @p[team=lord] positioned ~ ~1 ~ run tp @e[tag=attack_cooldown] ~ ~ ~
+
 #攻撃後無力化の解除
 execute if entity @e[type=interaction,tag=attack_cooldown] as @e[type=interaction,tag=attack_cooldown] at @s run scoreboard players add @s attack_cooldown 1
 execute if entity @e[type=interaction,tag=attack_cooldown,scores={attack_cooldown=100..}] as @e[type=interaction,tag=attack_cooldown,scores={attack_cooldown=100..}] at @s run kill @s

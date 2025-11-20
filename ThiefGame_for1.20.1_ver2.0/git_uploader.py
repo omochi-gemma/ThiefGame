@@ -5,7 +5,7 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "gitアップロードスクリプトにコマンドをメモ"
+changes_log = "館の主攻撃無効化interactionを常に移動"
 #実行コマンド
 #python git_uploader.py
 
