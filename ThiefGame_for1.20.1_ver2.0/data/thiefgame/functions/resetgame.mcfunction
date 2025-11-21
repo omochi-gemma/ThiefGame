@@ -62,10 +62,10 @@ scoreboard players set @a invisible_time 40
 scoreboard players set @a smoke_count 30
 scoreboard players set @a landmine_time 20
 scoreboard players set @a landmine_warp_time 40
-scoreboard players set @a super_eye_time 40
-scoreboard players set @a clairvoyance_time 60
+scoreboard players set @a super_eye_time 30
+scoreboard players set @a clairvoyance_time 40
 scoreboard players set @a heal_time 40
-scoreboard players set @a revivetp_charge 60
+scoreboard players set @a revivetp_charge 50
 scoreboard players set @a adrenaline_time 20
 scoreboard players set @a wrathful_heart_time 60
 #謎解きモードクリアタグ削除

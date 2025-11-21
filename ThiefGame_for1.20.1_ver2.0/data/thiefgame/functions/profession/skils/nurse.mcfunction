@@ -1,7 +1,7 @@
 #回復
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run playsound entity.player.levelup master @a ~ ~ ~ 1 1 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run particle heart ~ ~1 ~ 0.8 0.2 0.8 0.5 70 force @a
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run effect give @a[team=thief,distance=..3] instant_health 1 1 true
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run effect give @a[team=thief,distance=..3] instant_health 1 28 true
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run scoreboard players add @s use_carrot5 1
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run scoreboard players set @s use_carrot5 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1..,heal_time=0..}] run title @s actionbar ["",{"text":"\u518d\u4f7f\u7528\u53ef\u80fd\u307e\u3067\u6b8b\u308a:"},{"score":{"name":"@s","objective":"heal_time"},"color":"red"}]
@@ -39,4 +39,4 @@ execute if entity @s[scores={use_carrot6=1..},nbt={SelectedItem:{id:"minecraft:c
 execute if entity @s[scores={use_carrot6=1..,revivetp_charge=..-1}] run particle glow ~ ~1 ~ 0.2 0.2 0.2 0.01 50 force @a
 execute if entity @s[scores={use_carrot6=1..,revivetp_charge=..-1}] run playsound entity.player.levelup master @a ~ ~ ~ 1 2 0
 execute if entity @s[scores={use_carrot6=1..,revivetp_charge=..-1}] run scoreboard players set @s use_carrot6 0
-execute if entity @s[scores={revivetp_charge=..-1}] run scoreboard players set @s revivetp_charge 60
+execute if entity @s[scores={revivetp_charge=..-1}] run scoreboard players set @s revivetp_charge 50

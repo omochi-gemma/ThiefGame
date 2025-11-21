@@ -4,8 +4,8 @@ effect give @s resistance infinite 5 true
 effect give @s instant_health infinite 10 true
 effect give @s slowness infinite 0 true 
 
-execute if entity @e[type=interaction,tag=soul_interaction,distance=..10] run effect give @s slowness 1 1 true
-execute if entity @e[type=interaction,tag=soul_interaction,distance=..10] run effect give @s weakness 1 1 true
+execute if entity @e[type=interaction,tag=soul_interaction,distance=..10] run effect give @s slowness 1 0 true
+execute if entity @e[type=interaction,tag=soul_interaction,distance=..10] run effect give @s weakness 1 0 true
 
 #スキル
 effect give @s hunger infinite 200 true
