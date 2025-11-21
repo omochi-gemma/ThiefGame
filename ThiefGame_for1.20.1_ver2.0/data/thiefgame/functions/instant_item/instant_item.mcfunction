@@ -1,0 +1,4 @@
+function thiefgame:instant_item/simple_smoke_ball
+function thiefgame:instant_item/flash_lantern
+function thiefgame:instant_item/hazard_sensor
+function thiefgame:instant_item/super_acceleration_potion_slowness

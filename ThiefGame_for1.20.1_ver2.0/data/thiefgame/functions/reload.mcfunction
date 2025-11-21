@@ -51,6 +51,16 @@ scoreboard objectives add end_count dummy
 scoreboard objectives add bloodstain_count dummy
 scoreboard objectives add bloodstain_lifespan dummy
 
+#インスタントアイテム
+#簡易煙玉
+scoreboard objectives add simple_smoke_count dummy
+#フラッシュランタン
+scoreboard objectives add use_fungs1 used:warped_fungus_on_a_stick
+#危機管理センサー
+scoreboard objectives add hazard_sensor_count dummy
+#超加速ポーション
+scoreboard objectives add use_sap dummy
+
 #職業
 #忍者
 scoreboard objectives add invisible_count dummy

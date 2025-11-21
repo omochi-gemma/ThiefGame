@@ -83,6 +83,9 @@ execute if entity @e[type=armor_stand,tag=rng,tag=end_count] run function thiefg
 function thiefgame:profession/check_profession
 function thiefgame:lobby/profession/decision
 
+#インスタントアイテム
+execute if entity @e[type=armor_stand,tag=rng,tag=timer] as @a[team=thief] at @s run function thiefgame:instant_item/instant_item
+
 #ガラス瓶削除
 clear @a glass_bottle
 

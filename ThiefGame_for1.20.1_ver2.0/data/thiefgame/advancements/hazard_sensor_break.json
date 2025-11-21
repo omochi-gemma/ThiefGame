@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "hazard_sensor_break": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "team": "thief",
+          "nbt": "{Inventory:[{id:\"minecraft:gunpowder\",Slot:9b,tag:{CustomModelData:1}}]}"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "lord"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:instant_item/hazard_sensor_break"
+  }
+}

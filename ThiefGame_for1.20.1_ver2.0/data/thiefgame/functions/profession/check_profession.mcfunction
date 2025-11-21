@@ -10,3 +10,6 @@ execute if entity @a[team=thief,tag=nurse,tag=!in_lobby] as @a[team=thief,tag=nu
 
 execute if entity @a[team=thief,tag=avenger,tag=!in_lobby] as @a[team=thief,tag=avenger,tag=!in_lobby] at @s run function thiefgame:profession/passive/avenger
 execute if entity @a[team=thief,tag=avenger,tag=!in_lobby] as @a[team=thief,tag=avenger,tag=!in_lobby] at @s run function thiefgame:profession/skils/avenger
+
+execute if entity @a[team=thief,tag=chronomancer,tag=!in_lobby] as @a[team=thief,tag=chronomancer,tag=!in_lobby] at @s run function thiefgame:profession/passive/chronomancer
+execute if entity @a[team=thief,tag=chronomancer,tag=!in_lobby] as @a[team=thief,tag=chronomancer,tag=!in_lobby] at @s run function thiefgame:profession/skils/chronomancer
