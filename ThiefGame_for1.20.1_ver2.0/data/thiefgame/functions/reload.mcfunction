@@ -106,7 +106,12 @@ scoreboard objectives add wrathful_heart_time dummy
 
 #館の主
 scoreboard objectives add attack_cooldown dummy
-
+#能力
+#猛進
+scoreboard objectives add jump custom:jump
+#博徒
+scoreboard objectives add gamble_count dummy
+scoreboard objectives add gamble_power dummy
 #bossbar
 bossbar add thiefgame:timer "残り時間"
 bossbar set thiefgame:timer color yellow

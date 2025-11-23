@@ -25,6 +25,7 @@ execute as @s[tag=down,scores={down_damage_count=100..}] at @s run scoreboard pl
 
 #血痕
 execute if entity @s[tag=bloodstain] run function thiefgame:lobby/bloodstain/add_score
+execute as @e[type=armor_stand,tag=bloodstain,nbt={OnGround:true}] run data merge entity @s {Marker:true}
 scoreboard players add @e[type=armor_stand,tag=bloodstain] bloodstain_lifespan 1
 execute as @e[type=armor_stand,tag=bloodstain] at @s run particle item redstone_block ~ ~ ~ 0.2 0.001 0.2 0.00001 30 force @a
 execute as @e[type=armor_stand,tag=bloodstain,scores={bloodstain_lifespan=100..}] run kill @s

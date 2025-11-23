@@ -1,4 +1,3 @@
-execute as @e[type=armor_stand,tag=bloodstain,nbt={OnGround:true}] run data merge entity @s {Marker:true}
 execute if entity @s[scores={bloodstain_count=1}] run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["bloodstain"]}
 execute if entity @s[scores={bloodstain_count=20}] run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["bloodstain"]}
 execute if entity @s[scores={bloodstain_count=40}] run summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["bloodstain"]}

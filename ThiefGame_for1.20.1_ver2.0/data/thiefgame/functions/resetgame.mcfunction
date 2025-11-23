@@ -1,6 +1,18 @@
 #チーム削除
 team leave @a
 effect clear @a
+#職業タグ削除
+tag @a remove ninja
+tag @a remove engineer
+tag @a remove psychic
+tag @a remove nurse
+tag @a remove avenger
+tag @a remove chronomancer
+#能力タグ削除
+tag @a remove intelligent
+tag @a remove rush_forward
+tag @a remove adversity
+tag @a remove gambler
 #ロビーに壁設置
 fill 85 41 41 75 37 41 moss_block keep
 #全てのドアを閉じる

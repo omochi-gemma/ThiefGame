@@ -5,7 +5,7 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "インスタントアイテムのシステムを実装"
+changes_log = "軽微な調整と能力システムを一部実装"
 #実行コマンド
 #python git_uploader.py
 

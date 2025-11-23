@@ -82,6 +82,9 @@ execute if entity @e[type=armor_stand,tag=rng,tag=end_count] run function thiefg
 #職業
 function thiefgame:profession/check_profession
 function thiefgame:lobby/profession/decision
+#能力
+function thiefgame:lobby/ability/decision
+function thiefgame:ability/check_ability
 
 #インスタントアイテム
 execute if entity @e[type=armor_stand,tag=rng,tag=timer] as @a[team=thief] at @s run function thiefgame:instant_item/instant_item
@@ -90,7 +93,8 @@ execute if entity @e[type=armor_stand,tag=rng,tag=timer] as @a[team=thief] at @s
 clear @a glass_bottle
 
 
-
+#猛進以外のジャンプスコアリセット
+scoreboard players set @a[tag=!rush_forward] jump 0
 
 #Interactionリセット
 execute as @e[type=interaction] run data remove entity @s interaction

@@ -27,6 +27,10 @@ execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a 
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove avenger
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove chronomancer
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove bloodstain
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove intelligent
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove rush_forward
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove adversity
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a remove gambler
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run tag @a add in_lobby
 execute as @e[type=armor_stand,tag=rng,scores={end_count=61}] run tag @s remove end_count
 execute as @e[type=armor_stand,tag=rng,scores={end_count=61}] run scoreboard players set @s end_count 0
