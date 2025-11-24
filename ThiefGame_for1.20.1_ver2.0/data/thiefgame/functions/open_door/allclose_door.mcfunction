@@ -14,6 +14,8 @@ setblock 23 38 144 redstone_block
 setblock 30 38 154 redstone_block
 setblock 6 38 150 redstone_block
 setblock 18 38 150 redstone_block
+setblock 23 44 143 redstone_block
+setblock 23 44 162 redstone_block
 setblock -32 44 141 redstone_block
 setblock -32 44 163 redstone_block
 setblock -26 44 143 redstone_block
@@ -80,6 +82,8 @@ setblock 23 38 144 air
 setblock 30 38 154 air
 setblock 6 38 150 air
 setblock 18 38 150 air
+setblock 23 44 143 air
+setblock 23 44 162 air
 setblock -32 44 141 air
 setblock -32 44 163 air
 setblock -26 44 143 air

@@ -21,13 +21,19 @@ function thiefgame:setloottable/set_rare
 function thiefgame:setloottable/set_core
 #2階数字操作盤
 scoreboard players set @e[type=interaction,tag=CI] rclick_count 0
+execute as @e[type=interaction,tag=CI] at @s run function thiefgame:setcounttext/successnumber_culc
+##デバッグmsg
+tellraw @a[tag=debug] [{"text": "CI1の正解:","extra": [{"score": {"name": "@e[type=interaction,tag=CI1,limit=1,sort=nearest]","objective": "success_number"}}]}]
+tellraw @a[tag=debug] [{"text": "CI2の正解:","extra": [{"score": {"name": "@e[type=interaction,tag=CI2,limit=1,sort=nearest]","objective": "success_number"}}]}]
+tellraw @a[tag=debug] [{"text": "CI3の正解:","extra": [{"score": {"name": "@e[type=interaction,tag=CI3,limit=1,sort=nearest]","objective": "success_number"}}]}]
 setblock -8 44 140 stone_button[face=floor]
 #ドアカギ判定
 function thiefgame:open_door/summon_doorinteraction
 #なれっとの名前変更
-data merge entity @e[type=glow_item_frame,tag=naletto,limit=1] {Item:{id:golden_carrot,Count:1,tag:{CustomModelData:1,display:{Name:'{"text":"パスワードは「348」だよ！"}'}}}}
+data merge entity @e[type=glow_item_frame,tag=naletto,limit=1] {Item:{id:golden_carrot,Count:1,tag:{CustomModelData:1,display:{Name:'{"text":"パスワードはランダムだよ！"}'}}}}
 #橋の修復
 fill -2 42 178 -5 42 187 air replace brown_stained_glass
+setblock -3 42 178 minecraft:sculk_vein[north=true]
 scoreboard players set @e[type=armor_stand,tag=bridge] bridge 0
 #シュルカーの謎
 execute as @e[type=armor_stand,tag=shulker] at @s run setblock ~ ~-1 ~ air
@@ -83,6 +89,13 @@ tag @a remove clear_mystery
 scoreboard players set @a lives 1
 #タイマーを20分に設定
 scoreboard players set @e[type=armor_stand,tag=rng] timer 1200
+
+#エリア開放tagをリセット
+execute as @e[type=armor_stand,tag=rng] run tag @s remove area2
+execute as @e[type=armor_stand,tag=rng] run tag @s remove area3
+execute as @e[type=armor_stand,tag=rng] run tag @s remove area4
+#エリア開放時間設定
+execute as @e[type=armor_stand,tag=rng] at @s run function thiefgame:area/areacount_culc
 
 #独自の要素
 kill @e[type=text_display,tag=shulker_answer]

@@ -1,10 +1,15 @@
 #乱数
 scoreboard objectives add rng dummy
 scoreboard players set #100 rng 100
+scoreboard players set #60 rng 60
+scoreboard players set #180 rng 180
+scoreboard players set #9 rng 9
 
 #数字操作盤の記録スコア
 scoreboard objectives add rclick_count dummy
 scoreboard players set @e[type=interaction,tag=CI] rclick_count 0
+#数字操作盤の正解記録スコア
+scoreboard objectives add success_number dummy
 
 #橋の修復スコア
 scoreboard objectives add bridge dummy
@@ -18,6 +23,9 @@ scoreboard objectives add success_colorcheck dummy
 #緊急脱出装置
 scoreboard objectives add escape_count dummy
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
+
+#家具
+scoreboard objectives add break_blocking_door dummy
 
 #体力チェック用
 scoreboard objectives add Health dummy "体力"
@@ -40,6 +48,11 @@ scoreboard objectives add operation_score dummy
 scoreboard players set @e[type=armor_stand,tag=rng] timer 1200
 scoreboard players set #20 timer 20
 scoreboard players set #60 timer 60
+
+#エリア開放時間
+scoreboard objectives add area2_time dummy
+scoreboard objectives add area3_time dummy
+scoreboard objectives add area4_time dummy
 
 #スタートカウント
 scoreboard objectives add start_count dummy

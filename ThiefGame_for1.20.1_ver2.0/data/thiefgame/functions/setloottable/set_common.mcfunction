@@ -9,7 +9,7 @@ execute as @e[type=armor_stand,tag=3] at @s if predicate minecraft:set_common ru
 execute as @e[type=armor_stand,tag=r] at @s if predicate minecraft:set_common run data merge block ~ ~ ~ {LootTable:"minecraft:commands/common"}
 
 #1階と3階と屋上のチェストのために乱数生成
-execute as @e[type=armor_stand,tag=rng] at @s run function thiefgame:rng
+execute as @e[type=armor_stand,tag=rng] at @s run function thiefgame:rng/rng
 
 #1階と屋上のチェストと乱数を比較してカギを配置
 execute if entity @e[type=armor_stand,tag=rng,scores={rng=..19}] as @e[type=armor_stand,tag=3_1] at @s run data merge block ~ ~ ~ {LootTable:"minecraft:commands/common_key1"}

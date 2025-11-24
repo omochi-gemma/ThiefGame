@@ -8,6 +8,8 @@ effect give @a night_vision infinite 0 true
 function thiefgame:main_particle/workbench
 execute if entity @e[type=armor_stand,tag=rng,tag=show_answer] run function thiefgame:main_particle/concrete_answer
 function thiefgame:main_particle/lobby_particle
+execute as @e[type=interaction,tag=place_interaction] at @s run particle dust 0 0.996 0 1 ~ ~0.5 ~ 0.01 0.01 0.01 0.1 1 force @a[team=thief]
+execute as @e[type=interaction,tag=break_interaction] at @s run particle wax_off ~ ~1 ~ 0.4 0.4 0.4 0.1 1 force @a 
 
 #レシピ
 execute positioned 23.5 50 152.5 if entity @e[distance=..0.5,type=item] run function thiefgame:key_craft
@@ -18,11 +20,12 @@ execute as @a if predicate minecraft:open_doortre run function thiefgame:open_do
 execute as @a if predicate minecraft:open_door2 run function thiefgame:open_door/door2
 
 #2階の数字決定処理
-execute positioned -8 44 140 if block ~ ~ ~ stone_button[face=floor,powered=true] run function thiefgame:setcounttext/count_check/countcheck
+execute as @e[type=interaction,tag=CI] at @s run function thiefgame:setcounttext/count_check/number_check
+execute positioned -8 44 140 if block ~ ~ ~ stone_button[face=floor,powered=true] if block -8 46 139 redstone_lamp[lit=true] if block -7 46 139 redstone_lamp[lit=true] if block -6 46 139 redstone_lamp[lit=true] run function thiefgame:setcounttext/count_check/summon_magicglass
 
 #カギがかかっているドアを右クリックしたとき
-execute as @e[type=interaction,tag=DI] on target run tellraw @s "カギがかかっているようだ"
-execute as @e[type=interaction,tag=DI] on target at @s run playsound ui.button.click master @s ~ ~ ~ 1 2 0
+execute as @e[type=interaction,tag=DI] on target unless predicate minecraft:open_door2 unless predicate minecraft:open_doortre run tellraw @s "カギがかかっているようだ"
+execute as @e[type=interaction,tag=DI] on target at @s unless predicate minecraft:open_door2 unless predicate minecraft:open_doortre run playsound ui.button.click master @s ~ ~ ~ 1 2 0
 
 #2階の数字操作盤
 execute as @e[type=interaction,tag=CI1] on target at @s run function thiefgame:setcounttext/addscore_ci1
@@ -49,6 +52,10 @@ execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=19..40}] run func
 execute if block -3 43 256 redstone_block if block -4 44 256 lever[powered=true] run function thiefgame:escape_device/core_check
 execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=241..}] run function thiefgame:escape_device/escape
 
+#ドアブロック
+execute as @e[type=interaction,tag=place_interaction] at @s run function thiefgame:furniture/place_doorblock
+execute as @e[type=interaction,tag=break_interaction] at @s run function thiefgame:furniture/break_doorblock
+
 #脱出処理
 execute as @a[team=thief] at @s if block ~ ~2 ~ white_concrete run function thiefgame:success_escape/escape_check
 execute as @a[team=!thief,team=!lord,team=!spectator,tag=in_lobby,tag=!clear_mystery] at @s if block ~ ~2 ~ white_concrete run function thiefgame:lobby/end/mystery_end
@@ -70,6 +77,8 @@ function thiefgame:lobby/player_death/death
 
 #タイマー
 execute if entity @e[type=armor_stand,tag=rng,tag=timer] run function thiefgame:lobby/start/timer
+#エリア開放
+execute if entity @e[type=armor_stand,tag=rng,tag=timer] as @e[type=armor_stand,tag=rng,tag=timer] at @s run function thiefgame:area/area_main
 
 #スタートカウント
 execute as @e[type=armor_stand,tag=rng,tag=start_count] run function thiefgame:lobby/start/count_start

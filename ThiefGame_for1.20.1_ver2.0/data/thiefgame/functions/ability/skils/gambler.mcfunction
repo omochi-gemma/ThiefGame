@@ -1,8 +1,8 @@
 #博徒
 #乱数生成
-execute if entity @s[scores={gamble_count=..0}] run function thiefgame:rng
+execute if entity @s[scores={gamble_count=..0}] run function thiefgame:rng/rng
 execute if entity @s[scores={gamble_count=..0}] store result score @s gamble_power run scoreboard players get @s rng
-execute if entity @s[scores={gamble_count=..0}] run function thiefgame:rng2
+execute if entity @s[scores={gamble_count=..0}] run function thiefgame:rng/rng2
 execute if entity @s[scores={gamble_count=..0}] store result score @s gamble_count run scoreboard players get @s rng
 
 #攻撃力を設定
@@ -16,7 +16,7 @@ effect give @s[scores={gamble_power=40..49}] strength 1 2 true
 effect give @s[scores={gamble_power=30..39}] strength 1 1 true
 effect give @s[scores={gamble_power=20..29}] strength 1 0 true
 #gamble_powerが10~19のとき、エフェクトは無し
-#gamble_powerが0~9以上のとき、攻撃力が低下し、相手を回復させる
+#gamble_powerが0~9以上のとき、相手を回復させる
 
 
 #攻撃力に応じたパーティクルを表示
