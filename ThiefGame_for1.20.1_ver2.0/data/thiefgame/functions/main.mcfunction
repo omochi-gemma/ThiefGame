@@ -52,9 +52,12 @@ execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=19..40}] run func
 execute if block -3 43 256 redstone_block if block -4 44 256 lever[powered=true] run function thiefgame:escape_device/core_check
 execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=241..}] run function thiefgame:escape_device/escape
 
+#ギミック
 #ドアブロック
-execute as @e[type=interaction,tag=place_interaction] at @s run function thiefgame:furniture/place_doorblock
-execute as @e[type=interaction,tag=break_interaction] at @s run function thiefgame:furniture/break_doorblock
+execute as @e[type=interaction,tag=place_interaction] at @s run function thiefgame:gimmick/furniture/place_doorblock
+execute as @e[type=interaction,tag=break_interaction] at @s run function thiefgame:gimmick/furniture/break_doorblock
+#鉄柵
+function thiefgame:gimmick/iron_fence/ironfence_main
 
 #脱出処理
 execute as @a[team=thief] at @s if block ~ ~2 ~ white_concrete run function thiefgame:success_escape/escape_check

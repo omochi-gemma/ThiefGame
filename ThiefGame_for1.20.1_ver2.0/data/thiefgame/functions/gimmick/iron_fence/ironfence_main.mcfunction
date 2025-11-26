@@ -1,0 +1,2 @@
+function thiefgame:gimmick/iron_fence/place_ironfence
+function thiefgame:gimmick/iron_fence/break_ironfence

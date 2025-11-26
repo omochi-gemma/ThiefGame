@@ -1,0 +1,2 @@
+#AECの寿命が来たら鉄柵を元に戻す
+execute if entity @e[type=area_effect_cloud,tag=AEC_ironfence1a_1,nbt={Age:180}] as @e[type=area_effect_cloud,tag=AEC_ironfence1a_1,nbt={Age:180}] at @s run function thiefgame:gimmick/iron_fence/up_ironfence/annex/first_floor/ironfence1a_1
