@@ -35,11 +35,6 @@ data merge entity @e[type=glow_item_frame,tag=naletto,limit=1] {Item:{id:golden_
 fill -2 42 178 -5 42 187 air replace brown_stained_glass
 setblock -3 42 178 minecraft:sculk_vein[north=true]
 scoreboard players set @e[type=armor_stand,tag=bridge] bridge 0
-#シュルカーの謎
-execute as @e[type=armor_stand,tag=shulker] at @s run setblock ~ ~-1 ~ air
-execute as @e[type=armor_stand,tag=shulker] at @s run setblock ~ ~2 ~1 birch_button[face=floor]
-#金床復活
-setblock 23 38 202 anvil
 #白ガラス復活
 fill -5 46 228 -2 43 228 white_stained_glass
 #コンクリートパウダー補充
@@ -66,6 +61,15 @@ fill -3 43 244 -4 44 244 spruce_planks
 setblock -3 43 256 air
 setblock -4 44 256 lever[face=floor]
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
+
+#ギミック
+#バリケードをリセット
+function thiefgame:gimmick/furniture/resetposition
+#ブレーカーをリセット
+tag @e[type=interaction,tag=breaker] remove breaker1a_1_up
+tag @e[type=interaction,tag=breaker] add breaker1a_1_down
+scoreboard players set @a breaker_count 0
+
 #職業毎の残骸があれば削除
 kill @e[type=armor_stand,tag=footprint]
 kill @e[type=armor_stand,tag=smoke_point]
@@ -98,8 +102,6 @@ execute as @e[type=armor_stand,tag=rng] run tag @s remove area4
 execute as @e[type=armor_stand,tag=rng] at @s run function thiefgame:area/areacount_culc
 
 #独自の要素
-kill @e[type=text_display,tag=shulker_answer]
-summon text_display 24.0 40.2 204.0 {alignment:"center",Tags:["shulker_answer"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0.7f,0f,-0.7f],translation:[0f,0f,0f],scale:[2f,2f,2f]},text:'{"text":"G    8    6    U    3    P"}',background:16725558}
 tag @e[type=armor_stand,tag=rng] add show_answer
 
 #通知

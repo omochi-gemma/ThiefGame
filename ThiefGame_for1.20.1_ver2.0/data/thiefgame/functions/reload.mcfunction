@@ -26,6 +26,8 @@ scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
 
 #家具
 scoreboard objectives add break_blocking_door dummy
+#ブレーカー
+scoreboard objectives add breaker_count dummy
 
 #体力チェック用
 scoreboard objectives add Health dummy "体力"

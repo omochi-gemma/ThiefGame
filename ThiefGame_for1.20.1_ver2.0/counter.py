@@ -1,3 +1,6 @@
+#実行コマンド
+#python counter.py
+
 from pathlib import Path
 
 project_path = Path("C:/Users/MasuiHiroto/AppData/Roaming/ModrinthApp/profiles/ThiefGame/saves/world/datapacks/ThiefGame_for1.20.1_ver2.0")

@@ -2,7 +2,7 @@
 execute as @a[tag=!in_lobby] at @s run spawnpoint @s ~ ~ ~
 
 #暗視
-effect give @a night_vision infinite 0 true
+effect give @a[tag=!darkness] night_vision infinite 0 true
 
 #パーティクル
 function thiefgame:main_particle/workbench
@@ -41,9 +41,6 @@ execute as @e[type=armor_stand,tag=bridge,scores={bridge=0..}] at @s if block ~ 
 #シュルカーの謎
 execute as @e[type=armor_stand,tag=shulker] at @s run function thiefgame:shulker/hopper_check
 
-#金床復活
-execute unless block 23 38 202 anvil run setblock 23 38 202 anvil
-
 #コンクリートパウダーのチェック
 execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=..18}] run function thiefgame:concrete/cp_aircheck
 execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=19..40}] run function thiefgame:concrete/cpcheck
@@ -58,6 +55,8 @@ execute as @e[type=interaction,tag=place_interaction] at @s run function thiefga
 execute as @e[type=interaction,tag=break_interaction] at @s run function thiefgame:gimmick/furniture/break_doorblock
 #鉄柵
 function thiefgame:gimmick/iron_fence/ironfence_main
+#ブレーカー
+function thiefgame:gimmick/breaker/breaker_main
 
 #脱出処理
 execute as @a[team=thief] at @s if block ~ ~2 ~ white_concrete run function thiefgame:success_escape/escape_check
