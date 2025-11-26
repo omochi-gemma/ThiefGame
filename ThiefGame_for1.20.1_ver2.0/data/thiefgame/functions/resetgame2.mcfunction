@@ -35,8 +35,6 @@ data merge entity @e[type=glow_item_frame,tag=naletto,limit=1] {Item:{id:golden_
 fill -2 42 178 -5 42 187 air replace brown_stained_glass
 setblock -3 42 178 minecraft:sculk_vein[north=true]
 scoreboard players set @e[type=armor_stand,tag=bridge] bridge 0
-#白ガラス復活
-fill -5 46 228 -2 43 228 white_stained_glass
 #コンクリートパウダー補充
 function thiefgame:concrete/powder_refill
 #コンクリートパウダー再設置
@@ -61,6 +59,8 @@ fill -3 43 244 -4 44 244 spruce_planks
 setblock -3 43 256 air
 setblock -4 44 256 lever[face=floor]
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
+#出口リセット
+function thiefgame:exit/reset
 
 #ギミック
 #バリケードをリセット

@@ -24,6 +24,12 @@ scoreboard objectives add success_colorcheck dummy
 scoreboard objectives add escape_count dummy
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
 
+#出口
+scoreboard objectives add red_unlocking_count dummy
+scoreboard objectives add blue_unlocking_count dummy
+scoreboard objectives add yellow_unlocking_count dummy
+scoreboard objectives add green_unlocking_count dummy
+
 #家具
 scoreboard objectives add break_blocking_door dummy
 #ブレーカー
