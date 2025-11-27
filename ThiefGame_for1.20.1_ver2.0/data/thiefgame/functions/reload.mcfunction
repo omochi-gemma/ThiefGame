@@ -61,6 +61,7 @@ scoreboard players set #60 timer 60
 scoreboard objectives add area2_time dummy
 scoreboard objectives add area3_time dummy
 scoreboard objectives add area4_time dummy
+scoreboard objectives add player_count dummy
 
 #スタートカウント
 scoreboard objectives add start_count dummy

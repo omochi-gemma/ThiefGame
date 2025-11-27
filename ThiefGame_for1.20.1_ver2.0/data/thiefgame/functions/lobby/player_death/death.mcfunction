@@ -1,10 +1,12 @@
 #復讐者は復讐心をリセット
 execute as @a[team=thief,scores={death_count=1},tag=!in_lobby,tag=avenger] at @s run scoreboard players set @s revenge 0
 
-#残機がなくなったら観戦
+#残機がなくなったら観戦にして緊急脱出装置の解放チェック
 gamemode spectator @a[team=thief,scores={lives=-1},tag=!in_lobby]
 team leave @a[team=thief,scores={lives=-1},tag=!in_lobby]
+execute as @a[scores={lives=-1},tag=!in_lobby] at @s run function thiefgame:area/unlock/area5
 scoreboard players set @a[scores={lives=-1,death_count=2..},tag=!in_lobby] death_count 0
+execute as @a[scores={lives=-1},tag=!in_lobby] at @s run scoreboard players set @s lives -2
 
 execute as @a[team=thief,scores={death_count=1},tag=!in_lobby] at @s run scoreboard players remove @s lives 1
 execute as @a[team=thief,scores={death_count=1,lives=1..},tag=!in_lobby] at @s run scoreboard players set @e[tag=soul_interaction,limit=1,sort=nearest] revive 29

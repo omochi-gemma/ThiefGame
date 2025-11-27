@@ -59,6 +59,8 @@ fill -3 43 244 -4 44 244 spruce_planks
 setblock -3 43 256 air
 setblock -4 44 256 lever[face=floor]
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
+#出口のエリアロック
+
 #出口リセット
 function thiefgame:exit/reset
 
@@ -98,6 +100,7 @@ scoreboard players set @e[type=armor_stand,tag=rng] timer 1200
 execute as @e[type=armor_stand,tag=rng] run tag @s remove area2
 execute as @e[type=armor_stand,tag=rng] run tag @s remove area3
 execute as @e[type=armor_stand,tag=rng] run tag @s remove area4
+scoreboard players set @e[type=armor_stand,tag=rng] player_count 0
 #エリア開放時間設定
 execute as @e[type=armor_stand,tag=rng] at @s run function thiefgame:area/areacount_culc
 

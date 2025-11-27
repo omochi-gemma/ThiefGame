@@ -1,3 +1,4 @@
+#脱出処理
 title @s title {"text":"\u8131\u51fa\u6210\u529f\uff01\uff01","bold":true,"color":"yellow"}
 tellraw @a ["",{"selector":"@s","color":"green"},{"text":"\u304c\u8131\u51fa\u3057\u307e\u3057\u305f\u3002","color":"yellow"}]
 gamemode spectator @s
@@ -11,3 +12,5 @@ tag @s remove engineer
 tag @s remove psychic
 tag @s remove nurse
 tag @s add success_escape
+#誰かが脱出したら人数を確認
+function thiefgame:area/unlock/area5

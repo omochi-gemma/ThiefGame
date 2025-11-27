@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "gimmick_damage": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:barrier"
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:gimmick/hit_to_lord"
+  }
+}
