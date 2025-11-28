@@ -3,11 +3,14 @@
     "gimmick_damage": {
       "trigger": "minecraft:enter_block",
       "conditions": {
+        "player": {
+          "team": "lord"
+        },
         "block": "minecraft:barrier"
       }
     }
   },
   "rewards": {
-    "function": "thiefgame:gimmick/hit_to_lord"
+    "function": "thiefgame:gimmick/hit_to_lord/hit_to_lord"
   }
 }

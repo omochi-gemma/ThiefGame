@@ -15,6 +15,7 @@ fill 85 41 41 75 37 41 air destroy
 #全てのドアを閉じる
 function thiefgame:open_door/allclose_door
 #ルートテーブル配置
+function thiefgame:setloottable/reset_keyitemtags
 function thiefgame:setloottable/set_common
 function thiefgame:setloottable/set_uncommon
 function thiefgame:setloottable/set_rare
@@ -59,8 +60,9 @@ fill -3 43 244 -4 44 244 spruce_planks
 setblock -3 43 256 air
 setblock -4 44 256 lever[face=floor]
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
-#出口のエリアロック
-
+#出口のエリアロックリセット
+fill 30 43 215 30 45 217 spruce_fence
+fill -40 38 224 -38 40 224 spruce_fence
 #出口リセット
 function thiefgame:exit/reset
 
@@ -91,7 +93,7 @@ scoreboard players set @a adrenaline_time 20
 scoreboard players set @a wrathful_heart_time 60
 #謎解きモードクリアタグ削除
 tag @a remove clear_mystery
-#残機を2に設定
+#残機を1に設定
 scoreboard players set @a lives 1
 #タイマーを20分に設定
 scoreboard players set @e[type=armor_stand,tag=rng] timer 1200

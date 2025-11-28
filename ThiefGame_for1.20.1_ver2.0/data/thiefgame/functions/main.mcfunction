@@ -14,6 +14,9 @@ execute as @e[type=interaction,tag=break_interaction] at @s run particle wax_off
 #レシピ
 execute positioned 23.5 50 152.5 if entity @e[distance=..0.5,type=item] run function thiefgame:key_craft
 
+#キーアイテムを配置し続ける
+function thiefgame:setloottable/set_keyitem
+
 #中庭地下の宝物庫のドア
 execute as @a if predicate minecraft:open_doortre run function thiefgame:open_door/doortre
 #2階の鉄のドア
@@ -60,6 +63,8 @@ execute as @e[type=interaction,tag=break_interaction] at @s run function thiefga
 function thiefgame:gimmick/iron_fence/ironfence_main
 #ブレーカー
 function thiefgame:gimmick/breaker/breaker_main
+#ギミックヒット
+execute if entity @a[team=lord,tag=gimmick_hit] as @a[team=lord,tag=gimmick_hit] at @s run function thiefgame:gimmick/hit_to_lord/hit_to_lord_tp
 
 #脱出処理
 execute as @a[team=thief] at @s if block ~ ~3 ~ white_concrete run function thiefgame:success_escape/escape_check
