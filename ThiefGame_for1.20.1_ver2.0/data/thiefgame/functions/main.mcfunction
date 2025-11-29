@@ -20,11 +20,11 @@ function thiefgame:setloottable/set_keyitem
 #中庭地下の宝物庫のドア
 execute as @a if predicate minecraft:open_doortre run function thiefgame:open_door/doortre
 #2階の鉄のドア
-execute as @a if predicate minecraft:open_door2 run function thiefgame:open_door/door2
+execute as @a if predicate minecraft:open_door2 unless entity @e[tag=timestop] run function thiefgame:open_door/door2
 
 #2階の数字決定処理
 execute as @e[type=interaction,tag=CI] at @s run function thiefgame:setcounttext/count_check/number_check
-execute positioned -8 44 140 if block ~ ~ ~ stone_button[face=floor,powered=true] if block -8 46 139 redstone_lamp[lit=true] if block -7 46 139 redstone_lamp[lit=true] if block -6 46 139 redstone_lamp[lit=true] run function thiefgame:setcounttext/count_check/summon_magicglass
+execute positioned -8 44 140 if block ~ ~ ~ stone_button[face=floor,powered=true] if block -8 46 139 redstone_lamp[lit=true] if block -7 46 139 redstone_lamp[lit=true] if block -6 46 139 redstone_lamp[lit=true] unless entity @e[tag=timestop] run function thiefgame:setcounttext/count_check/summon_magicglass
 
 #カギがかかっているドアを右クリックしたとき
 execute as @e[type=interaction,tag=DI] on target unless predicate minecraft:open_door2 unless predicate minecraft:open_doortre run tellraw @s "カギがかかっているようだ"
@@ -39,7 +39,7 @@ execute as @e[type=interaction,tag=CI2] run function thiefgame:setcounttext/inte
 execute as @e[type=interaction,tag=CI3] run function thiefgame:setcounttext/interaction_count_ci3
 
 #橋の修復
-execute as @e[type=armor_stand,tag=bridge,scores={bridge=0..}] at @s if block ~ ~ ~ brown_stained_glass run function thiefgame:bridge_restoration/addscore_loop
+execute as @e[type=armor_stand,tag=bridge,scores={bridge=0..}] at @s if block ~ ~ ~ brown_stained_glass unless entity @e[tag=timestop] run function thiefgame:bridge_restoration/addscore_loop
 
 #シュルカーの謎
 execute as @e[type=armor_stand,tag=shulker] at @s run function thiefgame:shulker/hopper_check
@@ -49,11 +49,11 @@ execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=..18}] run functi
 execute if entity @e[type=armor_stand,tag=rng,scores={cp_noair=19..40}] run function thiefgame:concrete/cpcheck
 
 #緊急脱出装置
-execute if block -3 43 256 redstone_block if block -4 44 256 lever[powered=true] run function thiefgame:escape_device/core_check
-execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=241..}] run function thiefgame:escape_device/escape
+execute if block -3 43 256 redstone_block if block -4 44 256 lever[powered=true] unless entity @e[tag=timestop] run function thiefgame:escape_device/core_check
+execute if entity @e[type=armor_stand,tag=rng,scores={escape_count=241..}] unless entity @e[tag=timestop] run function thiefgame:escape_device/escape
 
 #出口
-function thiefgame:exit/exit_main
+execute unless entity @e[tag=timestop] run function thiefgame:exit/exit_main
 
 #ギミック
 #ドアブロック
@@ -67,7 +67,7 @@ function thiefgame:gimmick/breaker/breaker_main
 execute if entity @a[team=lord,tag=gimmick_hit] as @a[team=lord,tag=gimmick_hit] at @s run function thiefgame:gimmick/hit_to_lord/hit_to_lord_tp
 
 #脱出処理
-execute as @a[team=thief] at @s if block ~ ~3 ~ white_concrete run function thiefgame:success_escape/escape_check
+execute as @a[team=thief] at @s if block ~ ~3 ~ white_concrete unless entity @e[tag=timestop] run function thiefgame:success_escape/escape_check
 execute as @a[team=!thief,team=!lord,team=!spectator,tag=in_lobby,tag=!clear_mystery] at @s if block ~ ~3 ~ white_concrete run function thiefgame:lobby/end/mystery_end
 
 #役職

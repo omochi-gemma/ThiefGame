@@ -24,6 +24,7 @@ execute if entity @s[tag=place_landmine] run tag @s remove place_landmine
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1}}},scores={use_carrot1=1,landmine_time=0}] run scoreboard players set @s use_carrot1 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1}}},scores={use_carrot1=1..,landmine_time=0..}] run title @s actionbar ["",{"text":"\u5730\u96f7","color":"yellow"},{"text":"\u518d\u8a2d\u7f6e\u53ef\u80fd\u307e\u3067\u6b8b\u308a:"},{"score":{"name":"@s","objective":"landmine_time"},"color":"red"}]
 execute if entity @s[scores={engineer_delay=60..}] run scoreboard players add @s use_carrot1_count 1
+execute if entity @s[scores={engineer_delay=60..}] if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:2}}]}] run scoreboard players add @s use_carrot1_count 1
 execute if entity @s[scores={engineer_delay=60..,use_carrot1_count=20..}] run scoreboard players remove @s landmine_time 1
 execute if entity @s[scores={engineer_delay=60..,use_carrot1_count=20..}] run scoreboard players set @s use_carrot1_count 0
 execute if entity @s[scores={engineer_delay=60..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] run scoreboard players remove @s landmine_time 3
@@ -72,6 +73,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Cu
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}}},scores={use_carrot2=1}] run scoreboard players set @s use_carrot2 0
 
 execute if entity @s[scores={use_carrot2=1..}] run scoreboard players add @s use_carrot2_count 1
+execute if entity @s[scores={use_carrot2=1..}] if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:2}}]}] run scoreboard players add @s use_carrot2_count 1
 execute if entity @s[scores={use_carrot2=1..,use_carrot2_count=20..}] run scoreboard players remove @s landmine_warp_time 1
 execute if entity @s[scores={use_carrot2=1..,use_carrot2_count=20..}] run scoreboard players set @s use_carrot2_count 0
 execute if entity @s[scores={use_carrot2=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:2}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] run scoreboard players remove @s landmine_warp_time 3

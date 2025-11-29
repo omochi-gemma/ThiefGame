@@ -3,7 +3,7 @@ execute store result bossbar thiefgame:timer value run scoreboard players get @e
 bossbar set thiefgame:timer name ["",{"text":"\u6b8b\u308a\u6642\u9593 ","color":"white"},{"score":{"name":"@e[type=armor_stand,tag=rng,tag=timer]","objective":"timer_minute"},"bold":true,"color":"white"},{"text":":","bold":true,"color":"white"},{"score":{"name":"@e[type=armor_stand,tag=rng,tag=timer]","objective":"timer_second"},"bold":true,"color":"white"}]
 
 #カウント処理
-scoreboard players add @e[type=armor_stand,tag=rng,tag=timer] timer_count 1
+scoreboard players add @e[type=armor_stand,tag=rng,tag=timer,tag=!timestop] timer_count 1
 scoreboard players remove @e[type=armor_stand,tag=rng,tag=timer,scores={timer_count=20}] timer_second 1
 scoreboard players remove @e[type=armor_stand,tag=rng,tag=timer,scores={timer_count=20}] timer 1
 scoreboard players set @e[type=armor_stand,tag=rng,tag=timer,scores={timer_count=20}] timer_count 0

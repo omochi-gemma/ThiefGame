@@ -6,5 +6,6 @@ particle dust 0.376 0 0 1 ~ ~ ~ 0.6 0.6 0.6 1 500 force @a
 particle dust 0.161 0 0.204 1 ~ ~ ~ 0.6 0.6 0.6 1 500 force @a
 playsound item.totem.use master @a ~ ~ ~ 0.2 0 0
 summon interaction ~ ~1 ~ {Tags:["attack_cooldown"],width:1,height:1}
+execute if entity @s[tag=adversity] run scoreboard players add @s lord_attack_count 1
 
 advancement revoke @s only thiefgame:lord_attack

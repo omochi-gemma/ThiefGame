@@ -10,10 +10,10 @@ execute if entity @e[type=armor_stand,tag=ck1_3_4] as @e[type=armor_stand,tag=3_
 execute if entity @e[type=armor_stand,tag=ck1_3_5] as @e[type=armor_stand,tag=3_5] at @s run item replace block ~ ~ ~ container.13 with iron_nugget{display:{Name:'{"text":"宝物庫のカギの一部","color":"gold","bold":true}',Lore:['{"text":"宝物庫のカギにできるかも...？","color":"light_purple"}']},CustomModelData:1} 1
 
 #2階の鍵
-execute if entity @e[type=armor_stand,tag=2ndkey_r_1] as @e[type=armor_stand,tag=r_1] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:1} 1
-execute if entity @e[type=armor_stand,tag=2ndkey_r_2] as @e[type=armor_stand,tag=r_2] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:1} 1
-execute if entity @e[type=armor_stand,tag=2ndkey_r_3] as @e[type=armor_stand,tag=r_3] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:1} 1
-execute if entity @e[type=armor_stand,tag=2ndkey_r_4] as @e[type=armor_stand,tag=r_4] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:1} 1
+execute if entity @e[type=armor_stand,tag=2ndkey_r_1] as @e[type=armor_stand,tag=r_1] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:2} 1
+execute if entity @e[type=armor_stand,tag=2ndkey_r_2] as @e[type=armor_stand,tag=r_2] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:2} 1
+execute if entity @e[type=armor_stand,tag=2ndkey_r_3] as @e[type=armor_stand,tag=r_3] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:2} 1
+execute if entity @e[type=armor_stand,tag=2ndkey_r_4] as @e[type=armor_stand,tag=r_4] at @s run item replace block ~ ~ ~ container.13 with iron_ingot{display:{Name:'{"text":"2階のカギ","color":"gray","bold":true}',Lore:['{"text":"2階への扉が開きそう。","color":"light_purple"}']},CustomModelData:2} 1
 
 #色の鍵
 ##赤の鍵

@@ -5,7 +5,7 @@ import subprocess
 
 # ーーーーー実行前に必ず確認ーーーーー
 # 変更内容
-changes_log = "loottable全般を実装"
+changes_log = "軽微な変更、時間魔術師と逆境を実装"
 #実行コマンド
 #python git_uploader.py
 

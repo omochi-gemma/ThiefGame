@@ -6,6 +6,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Cu
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1}] run scoreboard players set @s use_carrot5 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}}},scores={use_carrot5=1..,heal_time=0..}] run title @s actionbar ["",{"text":"\u518d\u4f7f\u7528\u53ef\u80fd\u307e\u3067\u6b8b\u308a:"},{"score":{"name":"@s","objective":"heal_time"},"color":"red"}]
 execute if entity @s[scores={use_carrot5=1..}] run scoreboard players add @s use_carrot5_count 1
+execute if entity @s[scores={use_carrot5=1..}] if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:2}}]}] run scoreboard players add @s use_carrot5_count 1
 execute if entity @s[scores={use_carrot5=1..,use_carrot5_count=20..}] run scoreboard players remove @s heal_time 1
 execute if entity @s[scores={use_carrot5=1..,use_carrot5_count=20..}] run scoreboard players set @s use_carrot5_count 0
 execute if entity @s[scores={use_carrot5=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:5}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] run scoreboard players remove @s heal_time 3
@@ -30,6 +31,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Cu
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6}}},scores={use_carrot6=1}] run scoreboard players set @s use_carrot6 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6}}},scores={use_carrot6=1..,revivetp_charge=0..}] run title @s actionbar ["",{"text":"\u518d\u4f7f\u7528\u53ef\u80fd\u307e\u3067\u6b8b\u308a:"},{"score":{"name":"@s","objective":"revivetp_charge"},"color":"red"}]
 execute if entity @s[scores={use_carrot6=1..}] run scoreboard players add @s use_carrot6_count 1
+execute if entity @s[scores={use_carrot6=1..}] if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:2}}]}] run scoreboard players add @s use_carrot6_count 1
 execute if entity @s[scores={use_carrot6=1..,use_carrot6_count=20..}] run scoreboard players remove @s revivetp_charge 1
 execute if entity @s[scores={use_carrot6=1..,use_carrot6_count=20..}] run scoreboard players set @s use_carrot6_count 0
 execute if entity @s[scores={use_carrot6=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] run scoreboard players remove @s revivetp_charge 3

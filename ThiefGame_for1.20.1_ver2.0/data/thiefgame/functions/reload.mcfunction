@@ -126,14 +126,26 @@ scoreboard objectives add use_carrot8 used:carrot_on_a_stick
 scoreboard objectives add use_carrot8_count dummy
 scoreboard objectives add wrathful_heart_time dummy
 
+#時間魔術師
+scoreboard objectives add use_carrot9 used:carrot_on_a_stick
+scoreboard objectives add use_carrot9_count dummy
+scoreboard objectives add moon_hourglass_time dummy
+scoreboard objectives add moon_hourglass_usecount dummy
+scoreboard objectives add timestop_count dummy
+scoreboard objectives add sun_pocket_watch_time dummy
+scoreboard objectives add sun_pocket_watch_count dummy
+
 #館の主
 scoreboard objectives add attack_cooldown dummy
 #能力
 #猛進
 scoreboard objectives add jump custom:jump
+#逆境
+scoreboard objectives add lord_attack_count dummy
 #博徒
 scoreboard objectives add gamble_count dummy
 scoreboard objectives add gamble_power dummy
+
 #bossbar
 bossbar add thiefgame:timer "残り時間"
 bossbar set thiefgame:timer color yellow

@@ -3,9 +3,9 @@ scoreboard players add @e[type=armor_stand,tag=rng] end_count 1
 
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] run gamemode spectator @a
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] if entity @a[tag=success_escape] run title @a title {"text":"\u6ce5\u68d2\u306e\u52dd\u5229\uff01","bold":true,"color":"blue"}
-execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] if entity @a[tag=success_escape] at @a run playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1 0
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] if entity @a[tag=success_escape] at @a run playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 0.5 1 0
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] unless entity @a[tag=success_escape] run title @a title {"text":"\u9928\u306e\u4e3b\u306e\u52dd\u5229\uff01","bold":true,"color":"red"}
-execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] unless entity @a[tag=success_escape] at @a run playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1 0
+execute if entity @e[type=armor_stand,tag=rng,scores={end_count=1}] unless entity @a[tag=success_escape] at @a run playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 0.5 1 0
 scoreboard players set @e[type=interaction,tag=soul_interaction] revive 30
 
 execute if entity @e[type=armor_stand,tag=rng,scores={end_count=60}] run gamemode adventure @a

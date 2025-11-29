@@ -61,8 +61,7 @@ setblock -3 43 256 air
 setblock -4 44 256 lever[face=floor]
 scoreboard players set @e[type=armor_stand,tag=rng] escape_count 0
 #出口のエリアロックリセット
-fill 30 43 215 30 45 217 spruce_fence
-fill -40 38 224 -38 40 224 spruce_fence
+function thiefgame:area/lock/area4
 #出口リセット
 function thiefgame:exit/reset
 
@@ -91,6 +90,11 @@ scoreboard players set @a heal_time 40
 scoreboard players set @a revivetp_charge 50
 scoreboard players set @a adrenaline_time 20
 scoreboard players set @a wrathful_heart_time 60
+scoreboard players set @a moon_hourglass_time 30
+scoreboard players set @a sun_pocket_watch_time 30
+#時間停止スコアをリセット
+scoreboard players set @a timestop_count -1
+scoreboard players set @a moon_hourglass_usecount 0
 #謎解きモードクリアタグ削除
 tag @a remove clear_mystery
 #残機を1に設定
