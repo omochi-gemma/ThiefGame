@@ -2,7 +2,6 @@
 ##館の主は停止
 effect give @a[team=lord] slowness 1 6 true
 effect give @a[team=lord] jump_boost 1 199 true
-effect give @a[team=lord] blindness 1 0 true
 effect give @a[team=lord] weakness 1 255 true
 execute at @a[team=lord] positioned ~ ~1 ~ run particle enchant ~ ~ ~ 0.4 0.4 0.4 1 5 force @a
 

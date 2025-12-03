@@ -95,6 +95,8 @@ scoreboard players set @a sun_pocket_watch_time 30
 #時間停止スコアをリセット
 scoreboard players set @a timestop_count -1
 scoreboard players set @a moon_hourglass_usecount 0
+#攻撃階数リセット
+scoreboard players set @a lord_attack_count 0
 #謎解きモードクリアタグ削除
 tag @a remove clear_mystery
 #残機を1に設定

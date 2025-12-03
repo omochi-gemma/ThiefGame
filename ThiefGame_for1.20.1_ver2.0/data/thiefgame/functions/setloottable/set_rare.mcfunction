@@ -7,7 +7,7 @@ execute as @e[type=armor_stand,tag=a] at @s if predicate minecraft:set_rare run 
 
 #色鍵を配置
 ##黄の鍵
-execute if entity @e[type=armor_stand,tag=rng,scores={rng=..19}] as @e[type=armor_stand,tag=a1_1] at @s run tag @s add yellowkeya1_1
+execute if entity @e[type=armor_stand,tag=rng,scores={rng=..24}] as @e[type=armor_stand,tag=a1_1] at @s run tag @s add yellowkeya1_1
 execute if entity @e[type=armor_stand,tag=rng,scores={rng=25..49}] as @e[type=armor_stand,tag=a1_2] at @s run tag @s add yellowkeya1_2
 execute if entity @e[type=armor_stand,tag=rng,scores={rng=50..74}] as @e[type=armor_stand,tag=a1_3] at @s run tag @s add yellowkeya1_3
 execute if entity @e[type=armor_stand,tag=rng,scores={rng=75..99}] as @e[type=armor_stand,tag=a1_4] at @s run tag @s add yellowkeya1_4

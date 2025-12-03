@@ -20,6 +20,7 @@ execute as @e[type=interaction,tag=soul_interaction,scores={revive=29}] at @s ru
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=29}] at @s run playsound entity.player.levelup master @a ~ ~ ~ 1 2 0
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=29}] at @s run playsound minecraft:item.firecharge.use master @a ~ ~ ~ 1 2 0
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=29}] at @s run scoreboard players add @s revive 1
+execute as @e[type=interaction,tag=soul_interaction,scores={revive=30..}] at @s positioned ~ ~-1 ~ run clear @p[team=thief,tag=down] potion{CustomModelData:1}
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=30..}] at @s positioned ~ ~-1 ~ run tag @p[team=thief,tag=down] add live
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=30..}] at @s positioned ~ ~-1 ~ run effect give @p[team=thief,tag=down] health_boost infinite 4 true
 execute as @e[type=interaction,tag=soul_interaction,scores={revive=30..}] at @s positioned ~ ~-1 ~ run effect give @p[team=thief,tag=down] instant_health 1 4 true

@@ -41,7 +41,6 @@ execute if entity @s[scores={moon_hourglass_time=..-1}] run scoreboard players s
 #太陽の懐中時計
 execute if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] run effect give @a speed 1 1 true
 execute if entity @s[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{CustomModelData:1}}]}] at @a run particle wax_on ~ ~1 ~ 0.2 0.2 0.2 1 5 force @a
-execute if entity @s[tag=chronomancer,nbt=!{SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}}] run effect clear @a speed
 
 execute as @a[tag=chronomancer,tag=!in_lobby,nbt={SelectedItem:{id:"minecraft:red_dye",tag:{CustomModelData:2}}},scores={sun_pocket_watch_time=0..}] run title @s actionbar ["",{"text":"\u6b8b\u308a\u4f7f\u7528\u53ef\u80fd\u6642\u9593:"},{"score":{"name":"@s","objective":"sun_pocket_watch_time"},"color":"red"}]
 

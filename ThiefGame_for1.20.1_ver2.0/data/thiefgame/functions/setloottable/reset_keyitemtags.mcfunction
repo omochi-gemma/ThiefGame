@@ -23,9 +23,9 @@ tag @e remove bluekeya2_5
 tag @e remove bluekeya2_6
 
 tag @e remove yellowkeya1_1
-tag @e remove yellowkeya1_1
-tag @e remove yellowkeya1_1
-tag @e remove yellowkeya1_1
+tag @e remove yellowkeya1_2
+tag @e remove yellowkeya1_3
+tag @e remove yellowkeya1_4
 
 tag @e remove greenkeya2_1
 tag @e remove greenkeya2_2
