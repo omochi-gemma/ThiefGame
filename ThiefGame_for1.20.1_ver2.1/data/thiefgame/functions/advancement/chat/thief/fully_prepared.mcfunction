@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[準備万端]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[準備万端]\n脱出可能時間までに全ての色の鍵を手に入れる。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[計算通り]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[計算通り]\n50ブロック以上離れた館の主が地雷を踏む。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

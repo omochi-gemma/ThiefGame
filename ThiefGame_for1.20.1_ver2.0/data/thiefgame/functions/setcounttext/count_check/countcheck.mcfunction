@@ -1,7 +1,0 @@
-execute if entity @e[type=interaction,tag=CI1,scores={rclick_count=3}] if entity @e[type=interaction,tag=CI2,scores={rclick_count=4}] if entity @e[type=interaction,tag=CI3,scores={rclick_count=8}] run summon item -7 44 140 {Item:{id:"minecraft:brown_stained_glass",Count:1b,tag:{CanPlaceOn:["minecraft:brown_stained_glass"],display:{Name:'{"text":"魔法のガラス","color":"dark_purple"}',Lore:['{"text":"壊れた構造物を最低限修復","color":"light_purple"}','{"text":"してくれる魔法のガラス。","color":"light_purple"}']},Enchantments:[{}]}}}
-execute if entity @e[type=interaction,tag=CI1,scores={rclick_count=3}] if entity @e[type=interaction,tag=CI2,scores={rclick_count=4}] if entity @e[type=interaction,tag=CI3,scores={rclick_count=8}] run setblock ~ ~ ~ air
-execute if entity @e[type=interaction,tag=CI1,scores={rclick_count=3}] if entity @e[type=interaction,tag=CI2,scores={rclick_count=4}] if entity @e[type=interaction,tag=CI3,scores={rclick_count=8}] run playsound entity.player.levelup master @a -7 44 140 1 2 0
-execute if entity @e[type=interaction,tag=CI1,scores={rclick_count=3}] if entity @e[type=interaction,tag=CI2,scores={rclick_count=4}] if entity @e[type=interaction,tag=CI3,scores={rclick_count=8}] run particle happy_villager -7 44.5 140 0.2 0.2 0.2 1 20 force @a
-execute if entity @e[type=interaction,tag=CI1,scores={rclick_count=3}] if entity @e[type=interaction,tag=CI2,scores={rclick_count=4}] if entity @e[type=interaction,tag=CI3,scores={rclick_count=8}] run return 0
-tellraw @a[distance=..5] "パスワードが違うようだ..."
-setblock ~ ~ ~ stone_button[face=floor]

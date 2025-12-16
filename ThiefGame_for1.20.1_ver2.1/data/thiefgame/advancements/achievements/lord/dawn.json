@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bell"
+    },
+    "title": "夜明け",
+    "description": "一人も脱出させずに制限時間を迎える。",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/lord/worthy_master",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/lord/dawn"
+  }
+}

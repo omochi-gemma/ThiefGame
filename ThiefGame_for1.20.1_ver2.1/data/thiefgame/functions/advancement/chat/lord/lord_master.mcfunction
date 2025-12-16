@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[ロードマスター]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[ロードマスター]\n全ての能力で勝利する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

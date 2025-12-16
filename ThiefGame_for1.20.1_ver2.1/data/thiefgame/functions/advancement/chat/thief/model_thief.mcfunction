@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[泥棒のお手本]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[泥棒のお手本]\n一度もダウンせずに脱出する。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[定時退社]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[定時退社]\n脱出可能になってから40秒以内に脱出する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

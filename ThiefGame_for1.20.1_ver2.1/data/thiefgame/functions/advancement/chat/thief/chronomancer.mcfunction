@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[クロノマンサー]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[クロノマンサー]\n時間魔術師で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

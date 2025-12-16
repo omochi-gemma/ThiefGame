@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[お見通し]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[お見通し]\n超能力者で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

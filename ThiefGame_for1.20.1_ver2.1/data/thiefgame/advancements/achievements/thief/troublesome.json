@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:6}"
+    },
+    "title": "世話が焼ける",
+    "description": "一度のゲームで味方を10回以上蘇生する。",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/head_nurse",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/troublesome"
+  }
+}

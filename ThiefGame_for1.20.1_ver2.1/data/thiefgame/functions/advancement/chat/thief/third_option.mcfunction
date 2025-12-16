@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[第三の選択肢]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[第三の選択肢]\n緊急脱出装置で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

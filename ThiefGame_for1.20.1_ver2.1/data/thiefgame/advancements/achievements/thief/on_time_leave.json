@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
+    },
+    "title": "定時退社",
+    "description": "脱出可能になってから40秒以内に脱出する。",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/third_option",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/on_time_leave"
+  }
+}

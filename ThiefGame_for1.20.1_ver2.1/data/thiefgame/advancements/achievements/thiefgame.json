@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "clay_ball",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "泥棒ゲーム",
+    "description": "泥棒ゲームにようこそ！",
+    "background": "minecraft:textures/block/spruce_planks.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thiefgame"
+  }
+}

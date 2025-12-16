@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[お局看護師長]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[お局看護師長]\n看護師で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

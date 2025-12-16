@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[今こそ復讐の時]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[今こそ復讐の時]\n復讐心が20になる。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

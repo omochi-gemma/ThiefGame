@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "2階の鍵",
+                  "color": "gray"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "2階への扉が開きそう。",
+                    "color": "light_purple"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:2}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "test": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "team": "lord"
+        },
+        "effects": {
+          "minecraft:speed": {
+            "amplifier": 75,
+            "duration": {
+              "min": 2,
+              "max": 20
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:ability/skils/rush_forward/run_damage"
+  }
+}

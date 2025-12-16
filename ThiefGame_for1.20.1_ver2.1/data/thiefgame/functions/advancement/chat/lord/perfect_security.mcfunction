@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[館の警備はバッチリ！]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[館の警備はバッチリ！]\n2階解放前に勝利する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

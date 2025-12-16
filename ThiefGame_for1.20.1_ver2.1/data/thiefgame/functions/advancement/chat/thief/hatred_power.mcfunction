@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[憎しみを力に]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[憎しみを力に]\n復讐者で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

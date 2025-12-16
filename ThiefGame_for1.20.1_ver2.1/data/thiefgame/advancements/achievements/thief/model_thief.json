@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay_ball",
+      "nbt": "{CustomModelData:4}"
+    },
+    "title": "泥棒のお手本",
+    "description": "一度もダウンせずに脱出する。",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/indomitable_spirit",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/model_thief"
+  }
+}

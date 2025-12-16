@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[無職の仕事人]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[無職の仕事人]\n職業を選択せずに勝利する。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

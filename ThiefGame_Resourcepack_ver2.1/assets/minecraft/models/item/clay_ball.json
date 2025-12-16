@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/clay_ball"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 1},"model": "item/3d/thiefgame_icon"},
+    {"predicate": {"custom_model_data": 2},"model": "item/custom/colorful_key"},
+    {"predicate": {"custom_model_data": 3},"model": "item/custom/soul_icon"},
+    {"predicate": {"custom_model_data": 4},"model": "item/custom/darkred_heart_icon"},
+    {"predicate": {"custom_model_data": 5},"model": "item/custom/heart_icon"},
+    {"predicate": {"custom_model_data": 6},"model": "item/custom/golden_heart_icon"},
+    {"predicate": {"custom_model_data": 7},"model": "item/3d/teacup"},
+    {"predicate": {"custom_model_data": 8},"model": "item/3d/darjeeling"},
+    {"predicate": {"custom_model_data": 9},"model": "item/3d/assam"},
+    {"predicate": {"custom_model_data": 10},"model": "item/3d/ruhuna"},
+    {"predicate": {"custom_model_data": 11},"model": "item/3d/keemun"},
+    {"predicate": {"custom_model_data": 12},"model": "item/3d/teapot"}
+  ]
+}

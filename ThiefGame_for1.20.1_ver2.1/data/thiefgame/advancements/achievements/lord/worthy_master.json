@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay_ball",
+      "nbt": "{CustomModelData:7}"
+    },
+    "title": "立派な主",
+    "description": "館の主で勝利する。",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thiefgame",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/lord/worthy_master"
+  }
+}

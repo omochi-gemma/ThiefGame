@@ -1,0 +1,23 @@
+{
+  "providers": [
+    {
+      "type": "reference",
+      "id": "minecraft:include/space"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/default"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/unifont"
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/corechar.png",
+      "ascent": 0,
+      "height": 0,
+      "chars": ["\uE000"]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[夜明け]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[夜明け]\n一人も脱出させずに制限時間を迎える。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

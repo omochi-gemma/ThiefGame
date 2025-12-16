@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[パーフェクトゲーム]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[パーフェクトゲーム]\n一度もダメージを受けずに脱出する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

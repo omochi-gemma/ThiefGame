@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[有能な無能]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[有能な無能]\n能力を選択せずに勝利する。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

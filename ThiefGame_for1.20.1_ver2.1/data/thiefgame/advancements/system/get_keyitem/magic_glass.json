@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "get_keyitem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brown_stained_glass"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:ability/skils/intelligent/keyitem_check/get_keyitem"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone_block",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": "第三の選択肢",
+    "description": "緊急脱出装置で脱出する。",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/fully_prepared",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/third_option"
+  }
+}

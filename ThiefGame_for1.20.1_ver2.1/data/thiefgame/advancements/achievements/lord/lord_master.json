@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay_ball",
+      "nbt": "{CustomModelData:12}"
+    },
+    "title": "ロードマスター",
+    "description": "全ての能力で勝利する。",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/lord/worthy_master",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/lord/lord_master"
+  }
+}

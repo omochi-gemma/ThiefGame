@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[一般大泥棒]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[一般大泥棒]\n無職で一度もダメージを受けずに脱出する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

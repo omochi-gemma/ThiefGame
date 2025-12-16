@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[起死回生の一手]","color": "dark_purple","hoverEvent": {"action": "show_text","contents": [{"text": "[起死回生の一手]\n怪しい薬で自己蘇生する。","color": "dark_purple"}]}},{"text": "を達成しました。","color": "white"}]

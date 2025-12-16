@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[主任技術者]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[主任技術者]\n技術者で脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

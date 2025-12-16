@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ingot",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "シーフマスター",
+    "description": "全ての職業で脱出する。",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/apprentice_thief",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/thief_master"
+  }
+}

@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[シノブモノ]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[シノブモノ]\n透明化中に館の主に接近する。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

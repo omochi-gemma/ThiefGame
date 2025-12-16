@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[聡明叡智]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[聡明叡智]\n聡明で勝利する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

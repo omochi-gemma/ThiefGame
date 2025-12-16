@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[博徒僥倖]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[博徒僥倖]\n博徒で勝利する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

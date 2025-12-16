@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay_ball",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": "不屈の精神",
+    "description": "一度も死なずに脱出する。",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/apprentice_thief",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/indomitable_spirit"
+  }
+}

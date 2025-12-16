@@ -1,0 +1,85 @@
+{
+  "criteria": {
+    "get_redkey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "team": "thief"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "nbt": "{CustomModelData:1}"
+          }
+        ]
+      }
+    },
+    "get_bluekey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "team": "thief"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "nbt": "{CustomModelData:2}"
+          }
+        ]
+      }
+    },
+    "get_yellowkey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "team": "thief"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "nbt": "{CustomModelData:3}"
+          }
+        ]
+      }
+    },
+    "get_greenkey": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "team": "thief"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "nbt": "{CustomModelData:4}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_redkey"
+    ],
+    [
+      "get_bluekey"
+    ],
+    [
+      "get_yellowkey"
+    ],
+    [
+      "get_greenkey"
+    ]
+  ],
+  "rewards": {
+    "function": "thiefgame:advancement/trigger/get_colorfulkey"
+  }
+}

@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[不屈の精神]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[不屈の精神]\n一度も死なずに脱出する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

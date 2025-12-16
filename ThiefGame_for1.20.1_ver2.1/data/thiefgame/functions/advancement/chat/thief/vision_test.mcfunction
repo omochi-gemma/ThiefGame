@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[視力検査]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[視力検査]\n超能力者の目を最長距離で当てる。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

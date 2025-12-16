@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[顔怖っ]","color": "blue","hoverEvent": {"action": "show_text","contents": [{"text": "[顔怖っ]\n時間停止中に館の主に接近する。","color": "blue"}]}},{"text": "を達成しました。","color": "white"}]

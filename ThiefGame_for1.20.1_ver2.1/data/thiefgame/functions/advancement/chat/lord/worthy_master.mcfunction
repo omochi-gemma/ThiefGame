@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[立派な主]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[立派な主]\n館の主で勝利する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "get_keyitem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:ability/skils/intelligent/keyitem_check/get_keyitem"
+  }
+}

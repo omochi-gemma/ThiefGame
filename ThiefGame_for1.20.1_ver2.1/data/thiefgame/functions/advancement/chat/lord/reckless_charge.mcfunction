@@ -1,0 +1,1 @@
+tellraw @a [{"selector": "@s"},{"text": "が","color": "white"},{"text": "[猪突猛進]","color": "green","hoverEvent": {"action": "show_text","contents": [{"text": "[猪突猛進]\n猛進で勝利する。","color": "green"}]}},{"text": "を達成しました。","color": "white"}]

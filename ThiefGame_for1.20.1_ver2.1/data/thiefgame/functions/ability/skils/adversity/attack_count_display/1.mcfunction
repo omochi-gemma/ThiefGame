@@ -1,0 +1,2 @@
+#規定攻撃回数は1回
+title @s actionbar [{"text": "必要攻撃回数: "},{"text": "1回","color": "red"},{"text": " | "},{"text": "累計攻撃回数: "},{"text": "","extra": [{"score": {"name": "@s","objective": "lord_attack_count"}}],"color": "red"},{"text": "回","color": "red"}]

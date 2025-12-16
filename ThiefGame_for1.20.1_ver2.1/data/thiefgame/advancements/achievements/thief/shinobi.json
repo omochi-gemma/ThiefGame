@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:snowball",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "シノブモノ",
+    "description": "透明化中に館の主に接近する。",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/eggplant_style_ninjutsu",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/shinobi"
+  }
+}

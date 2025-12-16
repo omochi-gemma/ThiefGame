@@ -1,0 +1,1 @@
+advancement grant @s only thiefgame:achievements/thief/eggplant_style_ninjutsu

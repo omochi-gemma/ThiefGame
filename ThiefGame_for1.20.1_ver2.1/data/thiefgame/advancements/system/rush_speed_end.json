@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "test": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "team": "lord"
+        },
+        "effects": {
+          "minecraft:speed": {
+            "amplifier": 75,
+            "duration": 1
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:ability/skils/rush_forward/clear_effect"
+  }
+}

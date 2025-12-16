@@ -1,0 +1,1 @@
+execute unless entity @e[type=armor_stand,tag=area4] run advancement grant @s only thiefgame:achievements/thief/fully_prepared

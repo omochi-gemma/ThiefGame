@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "place_magicglass": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:brown_stained_glass"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:area/unlock/area3_announce"
+  }
+}

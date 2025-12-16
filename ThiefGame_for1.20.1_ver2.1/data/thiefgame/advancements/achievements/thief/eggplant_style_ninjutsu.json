@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:red_dye",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "茄子流忍法の使い手",
+    "description": "忍者で脱出する。",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "thiefgame:achievements/thief/apprentice_thief",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:advancement/chat/thief/eggplant_style_ninjutsu"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "get_keyitem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "nbt": "{CustomModelData:4}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thiefgame:ability/skils/intelligent/keyitem_check/get_keyitem"
+  }
+}
