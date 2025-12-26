@@ -1,0 +1,10 @@
+tag @s remove engineer
+tag @s remove psychic
+tag @s remove ninja
+tag @s remove avenger
+tag @s remove chronomancer
+
+tag @s add nurse
+playsound ui.button.click master @a[team=thief] ~ ~ ~ 1 2 0
+particle wax_on ~ ~1 ~ 0.2 0.2 0.2 0.5 100 force @a[team=thief]
+tellraw @a[team=thief] ["",{"selector":"@s"},{"text":"\u306f"},{"text":"\u770b\u8b77\u5e2b","color":"red","clickEvent": {"action": "open_url","value": "https://github.com/omochi-gemma/ThiefGame/wiki/%E8%81%B7%E6%A5%AD#-%E7%9C%8B%E8%AD%B7%E5%B8%AB"},"underlined": true},{"text":"\u306b\u306a\u308a\u307e\u3057\u305f\u3002"}]
